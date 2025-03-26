@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shushacard - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Shusha City Card Logo">
+            </a>        
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="card.html" class="nav-link">Get Shusha Card</a></li>
+                <li><a href="passes.html" class="nav-link">City Passes</a></li>
+                <li><a href="booking.html" class="nav-link">Hotel Booking</a></li>
+                <li><a href="app.html" class="nav-link">Mobile App</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="login-buttons">
+            <a href="#" class="login-button resident-login"><i class="fas fa-user"></i> Resident Login</a>
+            <a href="#" class="login-button tourist-login"><i class="fas fa-globe"></i> Tourist Login</a>
+        </div>
+    </header>          
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <div class="text-content">
+                <h1>Discover Shusha Like Never Before with the Shusha City Card</h1>
+                <p>Your all-access pass to Shusha’s top attractions, exclusive dining, and unforgettable experiences.</p>
+                <a href="#get-card" class="cta-button">Get Your Shusha Card Now</a>
+            </div>
+            <div class="hero-card-image">
+                <img src="images/shusha-card.png" alt="Shusha City Card">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Shusha Card Section -->
+    <section class="about">
+        <div class="about-content">
+            <!-- Right Column: Shusha Card Image -->
+            <div class="about-image">
+                <img src="images/shusha_card.png" alt="Shusha City Card">
+            </div>            
+            <!-- Left Column: Text -->
+            <div class="about-text">
+                <h2>About Shusha Card</h2>
+                <p>The Shusha City Card is your all-in-one gateway to experiencing the best of Shusha. Designed for both residents and visitors, this multifunctional card streamlines access to essential city services, historical and cultural attractions, and exclusive local businesses. With the Shusha City Card, you can explore the city’s rich heritage, shop at local stores, dine at renowned restaurants, and travel within the city—all with a single card.</p>
+                <p>In partnership with <strong>AzərTürk Bank</strong>, the Shusha City Card offers secure, cashless transactions for a seamless experience. The card allows for easy entry to popular sites, convenient public transportation, and discounts at various venues around the city. Whether you're looking to immerse yourself in Shusha’s vibrant culture or simply make your daily routine more efficient, the Shusha City Card is your reliable companion. Embrace the city’s spirit with ease and enjoy the exclusive benefits tailored just for cardholders.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <h2>Features & Benefits</h2>
+        <p class="intro-text">Discover the advantages of the Shusha City Card. Simplify your experience with one card that covers all your needs, from transport to exclusive VIP services.</p>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="icon-circle">
+                    <i class="fas fa-bus"></i>
+                </div>
+                <h3>One Card, Endless Benefits</h3>
+                <p>Use the card for everything from transport to shopping, eliminating the need for cash.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <h3>Exclusive Discounts</h3>
+                <p>Enjoy savings across local restaurants, stores, and cultural sites.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>VIP Experience</h3>
+                <p>For Premium Pass holders, experience exclusive perks like private guides and priority services.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <h3>Free Cultural Access</h3>
+                <p>Enjoy free or discounted entry to Shusha’s top museums and historical sites.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Dining Benefits</h3>
+                <p>Get complimentary treats at partner restaurants throughout the city.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle">
+                    <i class="fas fa-parking"></i>
+                </div>
+                <h3>Convenient Parking</h3>
+                <p>Pay for parking with ease and receive discounts on reserved spaces.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- City Attractions Section -->
+    <section class="city-attractions">
+        <h2>City Attractions & Highlights</h2>
+        <p class="intro-text">Explore Shusha’s top attractions with Shusha city card</p>
+
+        <div class="carousel-container" id="carousel-container">
+            <!-- Navigation Buttons -->
+            <button class="carousel-btn prev" onclick="stopAndSlide(-1)">&#10094;</button>
+            <div class="carousel" id="carousel">
+                <!-- Carousel Items -->
+                <div class="carousel-item">
+                    <img src="images/shusha-fortress.jpg" alt="Shusha Fortress">
+                    <h3>Shusha Fortress</h3>
+                    <p>Experience the iconic Shusha Fortress, a historical landmark with breathtaking views and centuries of history.</p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bulbul-museum.jpg" alt="Bulbul's Home Museum">
+                    <h3>Bulbul's Home Museum</h3>
+                    <p>Visit the museum dedicated to Bulbul, the famous Azerbaijani musician, to learn about his life and legacy.</p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/jidir-plain.jpg" alt="Jidir Plain">
+                    <h3>Jidir Plain</h3>
+                    <p>Discover the scenic Jidir Plain, known for its stunning landscapes and historical significance.</p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carpet-museum.jpg" alt="Karabakh History Museum">
+                    <h3>Shusha Carpet Museum</h3>
+                    <p>Explore the rich history of Karabakh through artifacts and exhibitions at this museum.</p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/mosque.jpg" alt="Shusha Mosque">
+                    <h3>Shusha Mosque</h3>
+                    <p>Marvel at the architectural beauty of Shusha Mosque, a site of cultural and historical significance.</p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/shusha-fortress.jpg" alt="Shusha Fortress">
+                    <h3>Shusha Fortress</h3>
+                    <p>Experience the iconic Shusha Fortress, a historical landmark with breathtaking views and centuries of history.</p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bulbul-museum.jpg" alt="Bulbul's Home Museum">
+                    <h3>Bulbul's Home Museum</h3>
+                    <p>Visit the museum dedicated to Bulbul, the famous Azerbaijani musician, to learn about his life and legacy.</p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/jidir-plain.jpg" alt="Jidir Plain">
+                    <h3>Jidir Plain</h3>
+                    <p>Discover the scenic Jidir Plain, known for its stunning landscapes and historical significance.</p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carpet-museum.jpg" alt="Karabakh History Museum">
+                    <h3>Shusha Carpet Museum</h3>
+                    <p>Explore the rich history of Karabakh through artifacts and exhibitions at this museum.</p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/mosque.jpg" alt="Shusha Mosque">
+                    <h3>Shusha Mosque</h3>
+                    <p>Marvel at the architectural beauty of Shusha Mosque, a site of cultural and historical significance.</p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="stopAndSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+
+    <!-- Available Passes Section --> 
+    <section class="available-passes">
+        <h2>Available City Passes</h2>
+        <p class="intro-text">Choose the Shusha City Pass that best suits your needs. Each pass offers unique benefits to make your experience unforgettable.</p>
+        
+        <div class="passes-grid">
+            <!-- Basic Pass -->
+            <div class="pass-card basic">
+                <h3>Basic Pass</h3>
+                <p>Perfect for short visits, the Basic Pass offers essential access to Shusha’s top attractions.</p>
+                <ul>
+                    <li>Entry to key cultural sites</li>
+                    <li>Discounts at selected restaurants</li>
+                    <li>Basic public transport access</li>
+                </ul>
+                <a href="basic-pass-details" class="cta-button">Learn More</a>
+            </div>
+            
+            <!-- Standard Pass -->
+            <div class="pass-card standard">
+                <h3>Standard Pass</h3>
+                <p>Ideal for a full experience, the Standard Pass gives you extended access and additional perks.</p>
+                <ul>
+                    <li>Entry to all major attractions</li>
+                    <li>Discounts at restaurants and stores</li>
+                    <li>Enhanced public transport access</li>
+                    <li>Priority entry at popular sites</li>
+                </ul>
+                <a href="standard-pass-details" class="cta-button">Learn More</a>
+            </div>
+            
+            <!-- Premium Pass -->
+            <div class="pass-card premium">
+                <h3>Premium Pass</h3>
+                <p>The ultimate Shusha experience, with VIP access, exclusive discounts, and special perks.</p>
+                <ul>
+                    <li>Unlimited entry to all attractions</li>
+                    <li>Exclusive dining and shopping discounts</li>
+                    <li>VIP access to events</li>
+                    <li>Private tours and priority services</li>
+                </ul>
+                <a href="premium-pass-details" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- How to Get Shusha City Pass Section -->
+    <section class="how-to-get-pass">
+        <h2>How to Get Your Shusha Visitor Pass</h2>
+        <p class="intro-text">Follow these simple steps to get your Shusha City Pass and start exploring the city with exclusive access and benefits.</p>
+        
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-icon">
+                    <span class="step-number">1</span>
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h3>Register Online</h3>
+                <p>Create an account on our website by providing basic information. Registration is quick and easy.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <span class="step-number">2</span>
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <h3>Choose Your Plan</h3>
+                <p>Select the plan that best fits your needs – Basic, Standard, or Premium – each offering different levels of access.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <span class="step-number">3</span>
+                    <i class="fas fa-file-upload"></i>
+                </div>
+                <h3>Send Documents</h3>
+                <p>Submit necessary documents, such as a valid ID and photo, to verify your identity and activate the card.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <span class="step-number">4</span>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Receive Your Card</h3>
+                <p>Your Shusha City Card will be delivered to you or can be picked up at our office. Start using it to enjoy Shusha!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- How to Get Shusha City Card Section -->
+    <section class="get-card">
+        <div class="content">
+            <div class="image">
+                <img src="images/kiosk.png" alt="Shusha City Card Terminal">
+            </div>            
+            <div class="steps">
+                <h2>How to Get Your Shusha City Card</h2>
+                <ul>
+                    <li><strong>1. Locate a Kiosk:</strong> Find a Shusha City Card kiosk at popular attractions, transportation hubs, and shopping areas throughout the city.</li>
+                    <li><strong>2. Select “Buy Card” Option:</strong> On the kiosk screen, select the “Buy Card” option to start the process.</li>
+                    <li><strong>3. Choose Your Plan:</strong> Review the available plans – Basic, Standard, or Premium – and select the one that best suits your needs.</li>
+                    <li><strong>4. Insert Payment:</strong> Follow the on-screen instructions to make a payment using cash or card. The kiosk will confirm once payment is completed.</li>
+                    <li><strong>5. Collect Your Card:</strong> Once the transaction is completed, your Shusha City Card will be dispensed from the kiosk. Enjoy your access to the city’s best attractions and services!</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Shusha Mobile App Section -->
+    <section class="mobile-app">
+        <div class="app-info">
+            <h2>Shusha City Card Mobile App</h2>
+            <p class="intro-text">Enhance your Shusha experience with the Shusha City Card mobile app. Easily manage your card, explore city attractions, receive exclusive offers, and access useful information at your fingertips.</p>
+            <ul>
+                <li><strong>Card Management:</strong> Check your balance, view transaction history, and renew your card directly in the app.</li>
+                <li><strong>Attraction Details:</strong> Get information on popular attractions, opening hours, directions, and entry fees.</li>
+                <li><strong>Exclusive Offers:</strong> Receive notifications on discounts and deals at partner restaurants, stores, and venues.</li>
+                <li><strong>Navigation Assistance:</strong> Find directions to top attractions, restaurants, and parking spots easily with integrated maps.</li>
+            </ul>
+            <a href="#" class="btn">Download the App</a>
+        </div>
+        <div class="app-image">
+            <img src="images/mobile-app.png" alt="Shusha City Card Mobile App">
+        </div>
+    </section>
+
+    
+    <!-- Shusha Şəhər Dövlət Qoruq İdarəsi Section -->
+    <section class="heritage-info">
+        <div class="heritage-image">
+            <img src="images/qoruq.jpg" alt="Shusha Heritage">
+        </div>
+        <div class="heritage-text">
+            <h2>About Shusha Şəhər Dövlət Qoruq İdarəsi</h2>
+            <p class="intro-text">Shusha Şəhər Dövlət Qoruq İdarəsi is dedicated to preserving and restoring the historical, cultural, and architectural heritage of Shusha, one of Azerbaijan’s most treasured cities. The organization plays a key role in maintaining Shusha as a living museum and a symbol of Azerbaijani heritage by restoring and protecting ancient landmarks, including historical buildings, monuments, and cultural sites. It also focuses on cultural education by organizing educational events, exhibitions, and tours to raise awareness about the city’s rich history and significance. </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>    
+
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <!-- FAQ Items with Accordion Effect -->
+        <div class="faq-item">
+            <button class="faq-question">What is the Shusha City Card?</button>
+            <div class="faq-answer">
+                <p>The Shusha City Card is a multifunctional pass that provides access to cultural sites, discounts at partner locations, and convenient payment options throughout the city.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How do I get the Shusha City Card?</button>
+            <div class="faq-answer">
+                <p>You can get the Shusha City Card online through our website or in person at designated locations in Shusha. Visit our "How to Get the Card" page for more details.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What benefits does the Shusha City Card offer?</button>
+            <div class="faq-answer">
+                <p>Cardholders enjoy exclusive discounts at local attractions, restaurants, shops, and access to special offers at various city locations.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Is the Shusha City Card available for tourists and residents?</button>
+            <div class="faq-answer">
+                <p>Yes, the card is available for both tourists and residents. Each card type offers tailored benefits to enhance your Shusha experience.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I renew or top up my card?</button>
+            <div class="faq-answer">
+                <p>You can easily renew or top up your card through our mobile app or at designated kiosks throughout the city.</p>
+            </div>
+        </div>
+
+        <div class="faq-contact">
+            <p>Have more questions? We're here to help!</p>
+            <a href="contact.html" class="contact-us-button">Contact Us</a>
+        </div>
+    </section>
+
+
+
+
+
+<!-- New Location Section with Map -->
+<section class="location-section">
+    <div class="location-wrapper">
+        <div class="map-container">
+            <!-- Replace the src with your actual Google Maps embed link -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1267.8404455625898!2d46.750464461638664!3d39.762965582169684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403e7b0a660aae3b%3A0x578e51dd0cd7a6a7!2zxZ51xZ9hIFJheW9uIMSwY3JhIEhha2ltaXl5yZl0aQ!5e0!3m2!1sen!2saz!4v1731141421286!5m2!1sen!2saz" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>               
+        </div>
+        <div class="contact-details">
+            <h3 data-translate="Visit Us">Visit Us</h3>
+            <p data-translate="We would love to welcome you to our office. Please contact us to schedule a visit or for more information about our services.">We would love to welcome you to our office. Please contact us to schedule a visit or for more information about our services.</p>
+            <ul>
+                <li><strong data-translate="Address:">Shusha Office:</strong> AZ5800, Shusha city, Khan Shushinsky street, entrance 3</li>
+                <li><strong data-translate="Address:">Baku Office:</strong> Baku city, Khojaly avenue 37, Demirchi Plaza</li>
+                <li><strong data-translate="Phone:">Phone:</strong> +994 10 250 26 26</li>
+                <li><strong data-translate="Email:">Email:</strong> <a href="mailto:office@shusha.gov.az">office@shusha.gov.az</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-column footer-about">
+            <h3 data-translate="About Us">About Us</h3>
+            <p data-translate="Shusha Şəhər Dövlət Qoruq İdarəsi is dedicated to preserving and restoring the historical, cultural, and architectural heritage of Shusha, one of Azerbaijan’s most treasured cities.">Shusha Şəhər Dövlət Qoruq İdarəsi is dedicated to preserving and restoring the historical, cultural, and architectural heritage of Shusha, one of Azerbaijan’s most treasured cities.</p>
+            <p><strong data-translate="Email:">Email:</strong> <a href="mailto:office@shusha.gov.az">office@shusha.gov.az</a></p>
+            <p><strong data-translate="Phone:">Phone:</strong> <a href="tel:+994 10 250 26 26">+994 10 250 26 26</a></p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column footer-links">
+            <h3 data-translate="Quick Links">Quick Links</h3>
+            <ul>
+                <li><a href="index.html" data-translate="Home">Home</a></li>
+                <li><a href="about.html" data-translate="About Us">About Us</a></li>
+                <li><a href="services.html" data-translate="Services">Services</a></li>
+                <li><a href="contact.html" data-translate="Contact Us">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-column footer-social">
+            <h3 data-translate="Follow Us">Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column footer-newsletter">
+            <h3 data-translate="Stay Updated">Stay Updated</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" required data-translate="Your Email">
+                <button type="submit" data-translate="Subscribe">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p data-translate="© 2024 TechTrade Solutions. All rights reserved.">© 2024 TechTrade Solutions. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+<!-- Carousel Script -->
+<script>
+    const carousel = document.getElementById("carousel");
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    const itemWidth = carouselItems[0].offsetWidth + 24; // Width of one item + gap
+    let isPaused = false;
+    let carouselPosition = 0;
+
+    function stopAndSlide(direction) {
+        isPaused = true; // Pauses continuous scrolling
+        carousel.classList.add("paused");
+
+        carouselPosition += direction * itemWidth;
+
+        // Check if we’ve reached the end or beginning
+        if (carouselPosition >= itemWidth * carouselItems.length) {
+            carouselPosition = 0; // Instantly reset to the start
+            carousel.scrollTo({ left: 0, behavior: "instant" }); // Instantly jump to the beginning
+        } else if (carouselPosition < 0) {
+            carouselPosition = itemWidth * (carouselItems.length - 1); // Instantly loop to the last item
+            carousel.scrollTo({ left: carouselPosition, behavior: "instant" });
+        } else {
+            carousel.scrollTo({
+                left: carouselPosition,
+                behavior: "smooth" // Smooth transition for normal scroll
+            });
+        }
+    }
+
+    // Continuous scrolling function
+    function autoScroll() {
+        if (!isPaused) {
+            carouselPosition += itemWidth;
+            if (carouselPosition >= itemWidth * carouselItems.length) {
+                carouselPosition = 0;
+                carousel.scrollTo({ left: 0, behavior: "instant" }); // Reset instantly
+            } else {
+                carousel.scrollTo({
+                    left: carouselPosition,
+                    behavior: "smooth"
+                });
+            }
+        }
+    }
+
+    // Restart scrolling when clicking outside the carousel
+    document.addEventListener("click", (e) => {
+        if (!carousel.contains(e.target) && isPaused) {
+            isPaused = false;
+            carousel.classList.remove("paused");
+        }
+    });
+
+    // Set up continuous scrolling every 3 seconds
+    setInterval(autoScroll, 3000); // Adjust interval as needed
+</script>
+
+
+<!-- FAQ Script -->
+<script>
+    // FAQ Accordion Functionality
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle('open');
+            button.classList.toggle('active');
+        });
+    });
+</script>
+
+
+<!-- Page Change Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current page URL path, excluding the leading '/'
+    const currentPath = window.location.pathname.replace(/^\//, '');
+
+    // Select all navigation links
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    navLinks.forEach(link => {
+        // Get the href attribute of each link, excluding the leading '/'
+        const linkPath = link.getAttribute("href").replace(/^\//, '');
+
+        // Compare the link path to the current path
+        if (linkPath === currentPath) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+    
+</body>
+</html>

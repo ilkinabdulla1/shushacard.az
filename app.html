@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shushacard - Mobile App</title>
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Shusha City Card Logo">
+            </a>        
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="card.html" class="nav-link">Get Shusha Card</a></li>
+                <li><a href="passes.html" class="nav-link">City Passes</a></li>
+                <li><a href="booking.html" class="nav-link">Hotel Booking</a></li>
+                <li><a href="app.html" class="nav-link active">Mobile App</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="login-buttons">
+            <a href="#" class="login-button resident-login"><i class="fas fa-user"></i> Resident Login</a>
+            <a href="#" class="login-button tourist-login"><i class="fas fa-globe"></i> Tourist Login</a>
+        </div>
+    </header>          
+    
+
+    <!-- Hero Section -->
+    <section class="app-hero">
+        <div class="hero-content">
+            <div class="text-content">
+                <h1>Explore Shusha with Ease</h1>
+                <p>Experience seamless access, exclusive offers, and real-time updates throughout the city. The Shusha City Card app is your ultimate travel companion for an unforgettable visit.</p>
+                <a href="#download" class="cta-button">Download the App</a>
+            </div>
+            <div class="app-screenshot">
+                <img src="images/mobile-app.png" alt="Shusha City Card Mobile App Screenshot">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Carousel Section -->
+    <section class="app-carousel">
+        <h2>App Preview</h2>
+        <p class="intro-text">Get a glimpse of the Shusha City Card app interface and explore its features.</p>
+        
+        <!-- Carousel Container -->
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!-- Carousel Items -->
+                    <div class="carousel-item">
+                        <img src="images/mobile-app.png" alt="App Screenshot 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/mobile-app.png" alt="App Screenshot 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/mobile-app.png" alt="App Screenshot 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/mobile-app.png" alt="App Screenshot 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/mobile-app.png" alt="App Screenshot 5">
+                    </div>
+                    <!-- Add more carousel items as needed -->
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="key-features">
+        <h2>App Key Features</h2>
+        <p class="intro-text">Discover how the Shusha City Card mobile app enhances your experience, providing convenience and exclusive benefits throughout your journey.</p>
+    
+        <div class="features-grid">
+            <!-- Feature 1: Card Management -->
+            <div class="feature-item">
+                <i class="fas fa-wallet"></i>
+                <h3>Card Management</h3>
+                <p>Easily manage your card balance, view transaction history, and renew your card directly within the app.</p>
+            </div>
+    
+            <!-- Feature 2: Attraction Details -->
+            <div class="feature-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Attraction Details</h3>
+                <p>Get information on popular attractions, opening hours, directions, and entry fees right at your fingertips.</p>
+            </div>
+    
+            <!-- Feature 3: Exclusive Offers -->
+            <div class="feature-item">
+                <i class="fas fa-tags"></i>
+                <h3>Exclusive Offers</h3>
+                <p>Receive notifications on discounts and special deals at partner restaurants, shops, and cultural sites.</p>
+            </div>
+    
+            <!-- Feature 4: Navigation Assistance -->
+            <div class="feature-item">
+                <i class="fas fa-compass"></i>
+                <h3>Navigation Assistance</h3>
+                <p>Find directions to attractions, restaurants, and parking spots with integrated maps for easy navigation.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Benefits Section -->
+    <section class="app-benefits">
+        <h2>Why Use the Shusha City Card App?</h2>
+        <p class="intro-text">The Shusha City Card app enhances your experience with seamless access, exclusive offers, and real-time updates to make your journey smooth and enjoyable.</p>
+        
+        <div class="benefits-grid">
+            <!-- Benefit 1: Convenience -->
+            <div class="benefit-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Ultimate Convenience</h3>
+                <p>Access your Shusha City Card anytime, anywhere, and manage your account with ease right from your phone.</p>
+            </div>
+    
+            <!-- Benefit 2: Real-Time Updates -->
+            <div class="benefit-item">
+                <i class="fas fa-sync-alt"></i>
+                <h3>Real-Time Updates</h3>
+                <p>Stay informed with real-time notifications on exclusive deals, attraction information, and event updates.</p>
+            </div>
+    
+            <!-- Benefit 3: Exclusive Deals -->
+            <div class="benefit-item">
+                <i class="fas fa-percentage"></i>
+                <h3>Exclusive Offers</h3>
+                <p>Enjoy special discounts and deals available only to app users, making your experience more affordable.</p>
+            </div>
+    
+            <!-- Benefit 4: Easy Navigation -->
+            <div class="benefit-item">
+                <i class="fas fa-directions"></i>
+                <h3>Easy Navigation</h3>
+                <p>Find directions and locate nearby attractions, restaurants, and services effortlessly with integrated maps.</p>
+            </div>
+        </div>
+    </section>
+        
+
+    <!-- Download App Section -->
+    <section class="download-app">
+        <h2>Download the Shusha City Card App</h2>
+        <p class="intro-text">Get the app on your device for easy access to exclusive features, updates, and more.</p>
+    
+        <div class="download-options">
+            <!-- Android Download Link -->
+            <div class="download-item">
+                <img src="images/google-play-badge.png" alt="Download on Google Play" class="download-badge">
+                <a href="https://play.google.com/store/apps/details?id=example" target="_blank" class="download-link">Get it on Google Play</a>
+            </div>
+    
+            <!-- iOS Download Link -->
+            <div class="download-item">
+                <img src="images/app-store-badge.png" alt="Download on the App Store" class="download-badge">
+                <a href="https://apps.apple.com/us/app/example/id123456789" target="_blank" class="download-link">Download on the App Store</a>
+            </div>
+    
+            <!-- QR Code for Direct Download -->
+            <div class="download-item qr-code">
+                <img src="images/qr-code.png" alt="QR Code for App Download" class="qr-code-img">
+                <p>Scan to Download</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <!-- FAQ Items with Accordion Effect -->
+        <div class="faq-item">
+            <button class="faq-question">What is the Shusha City Card?</button>
+            <div class="faq-answer">
+                <p>The Shusha City Card is a multifunctional pass that provides access to cultural sites, discounts at partner locations, and convenient payment options throughout the city.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How do I get the Shusha City Card?</button>
+            <div class="faq-answer">
+                <p>You can get the Shusha City Card online through our website or in person at designated locations in Shusha. Visit our "How to Get the Card" page for more details.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What benefits does the Shusha City Card offer?</button>
+            <div class="faq-answer">
+                <p>Cardholders enjoy exclusive discounts at local attractions, restaurants, shops, and access to special offers at various city locations.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Is the Shusha City Card available for tourists and residents?</button>
+            <div class="faq-answer">
+                <p>Yes, the card is available for both tourists and residents. Each card type offers tailored benefits to enhance your Shusha experience.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I renew or top up my card?</button>
+            <div class="faq-answer">
+                <p>You can easily renew or top up your card through our mobile app or at designated kiosks throughout the city.</p>
+            </div>
+        </div>
+
+        <div class="faq-contact">
+            <p>Have more questions? We're here to help!</p>
+            <a href="contact.html" class="contact-us-button">Contact Us</a>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="cta-download">
+        <div class="cta-content">
+            <h2>Get the Shusha City Card App Today!</h2>
+            <p>Unlock exclusive access, seamless navigation, and real-time offers. Download now and make the most of your Shusha experience!</p>
+            <a href="#download" class="cta-button">Download the App</a>
+        </div>
+    </section>
+    
+
+
+
+    
+<!-- New Location Section with Map -->
+<section class="location-section">
+    <div class="location-wrapper">
+        <div class="map-container">
+            <!-- Replace the src with your actual Google Maps embed link -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1267.8404455625898!2d46.750464461638664!3d39.762965582169684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403e7b0a660aae3b%3A0x578e51dd0cd7a6a7!2zxZ51xZ9hIFJheW9uIMSwY3JhIEhha2ltaXl5yZl0aQ!5e0!3m2!1sen!2saz!4v1731141421286!5m2!1sen!2saz" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>               
+        </div>
+        <div class="contact-details">
+            <h3 data-translate="Visit Us">Visit Us</h3>
+            <p data-translate="We would love to welcome you to our office. Please contact us to schedule a visit or for more information about our services.">We would love to welcome you to our office. Please contact us to schedule a visit or for more information about our services.</p>
+            <ul>
+                <li><strong data-translate="Address:">Shusha Office:</strong> AZ5800, Shusha city, Khan Shushinsky street, entrance 3</li>
+                <li><strong data-translate="Address:">Baku Office:</strong> Baku city, Khojaly avenue 37, Demirchi Plaza</li>
+                <li><strong data-translate="Phone:">Phone:</strong> +994 10 250 26 26</li>
+                <li><strong data-translate="Email:">Email:</strong> <a href="mailto:office@shusha.gov.az">office@shusha.gov.az</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-column footer-about">
+            <h3 data-translate="About Us">About Us</h3>
+            <p data-translate="Shusha Şəhər Dövlət Qoruq İdarəsi is dedicated to preserving and restoring the historical, cultural, and architectural heritage of Shusha, one of Azerbaijan’s most treasured cities.">Shusha Şəhər Dövlət Qoruq İdarəsi is dedicated to preserving and restoring the historical, cultural, and architectural heritage of Shusha, one of Azerbaijan’s most treasured cities.</p>
+            <p><strong data-translate="Email:">Email:</strong> <a href="mailto:office@shusha.gov.az">office@shusha.gov.az</a></p>
+            <p><strong data-translate="Phone:">Phone:</strong> <a href="tel:+994 10 250 26 26">+994 10 250 26 26</a></p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column footer-links">
+            <h3 data-translate="Quick Links">Quick Links</h3>
+            <ul>
+                <li><a href="index.html" data-translate="Home">Home</a></li>
+                <li><a href="about.html" data-translate="About Us">About Us</a></li>
+                <li><a href="services.html" data-translate="Services">Services</a></li>
+                <li><a href="contact.html" data-translate="Contact Us">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-column footer-social">
+            <h3 data-translate="Follow Us">Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column footer-newsletter">
+            <h3 data-translate="Stay Updated">Stay Updated</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" required data-translate="Your Email">
+                <button type="submit" data-translate="Subscribe">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p data-translate="© 2024 TechTrade Solutions. All rights reserved.">© 2024 TechTrade Solutions. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+<!-- FAQ Script -->
+<script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle('open');
+            button.classList.toggle('active');
+        });
+    });
+</script>
+
+
+<!-- Carousel Script -->
+<script>
+    let currentIndex = 0;
+    
+    function changeSlide(direction) {
+        const carousel = document.querySelector(".carousel");
+        const items = document.querySelectorAll(".carousel-item");
+        const totalItems = items.length;
+        const itemsPerView = 3; // Number of items visible at once
+    
+        // Calculate new index with wrap-around logic
+        currentIndex = (currentIndex + direction + totalItems) % totalItems;
+    
+        // Calculate offset to show current slide set, moving by one item
+        const offset = currentIndex * (100 / itemsPerView);
+        carousel.style.transform = `translateX(-${offset}%)`;
+    }
+    </script>
+        
+</body>
+</html>

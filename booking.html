@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shushacard - Hotel Booking</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Shusha City Card Logo">
+            </a>        
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="card.html" class="nav-link">Get Shusha Card</a></li>
+                <li><a href="passes.html" class="nav-link">City Passes</a></li>
+                <li><a href="booking.html" class="nav-link active">Hotel Booking</a></li>
+                <li><a href="app.html" class="nav-link">Mobile App</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="login-buttons">
+            <a href="#" class="login-button resident-login"><i class="fas fa-user"></i> Resident Login</a>
+            <a href="#" class="login-button tourist-login"><i class="fas fa-globe"></i> Tourist Login</a>
+        </div>
+    </header>          
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div> <!-- Dark overlay for better contrast -->
+        <div class="hero-content">
+            <div class="text-content">
+                <h1>Discover Comfortable Stays in Shusha</h1>
+                <p>Experience the charm of Shusha with top-rated hotels that cater to all your needs for a memorable stay.</p>
+                <a href="#search" class="cta-button">Start Your Search</a>
+            </div>
+            <div class="image-content">
+                <img src="images/room.jpg" alt="Comfortable Hotel Room">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Search Section -->
+    <section class="search-booking">
+        <div class="overlay"></div>
+        <h1>Discover Comfortable Stays in Shusha</h1>
+        <p>Enter your dates and choose from a variety of accommodation options.</p>
+        
+        <form action="search-results.html" class="booking-form">
+            <!-- Check-in Date -->
+            <div class="form-field">
+                <i class="fas fa-calendar-alt"></i>
+                <input type="text" placeholder="Check-in" class="date-picker" onfocus="(this.type='date')" required>
+            </div>
+            
+            <!-- Check-out Date -->
+            <div class="form-field">
+                <i class="fas fa-calendar-alt"></i>
+                <input type="text" placeholder="Check-out" class="date-picker" onfocus="(this.type='date')" required>
+            </div>
+            
+            <!-- Guests & Rooms Dropdown -->
+            <div class="form-field dropdown">
+                <i class="fas fa-user-friends"></i>
+                <input type="text" placeholder="2 Adults · 0 Children · 1 Room" id="guestDropdownToggle" readonly required>
+                <div class="dropdown-content" id="guestDropdown">
+                    <label>Adults:</label>
+                    <input type="number" min="1" max="10" value="2">
+                    <label>Children:</label>
+                    <input type="number" min="0" max="10" value="0">
+                    <label>Rooms:</label>
+                    <input type="number" min="1" max="5" value="1">
+                </div>
+            </div>
+            
+            <!-- Search Button -->
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </section>
+
+    
+    <!-- Hotels Section -->
+    <section class="featured-hotels">
+        <h2>Top-Rated Hotels in Shusha</h2>
+        <p class="section-intro">Explore some of the best accommodations Shusha has to offer. From luxury suites to cozy rooms, find your ideal stay.</p>
+        
+        <div class="hotels-grid">
+            <!-- Hotel 1 -->
+            <div class="hotel-card">
+                <img src="images/shusha-hotel.jpg" alt="Luxury Hotel">
+                <div class="hotel-info">
+                    <h3>Shusha Hotel</h3>
+                    <p>Experience luxury and elegance at the Shusha Grand Hotel, featuring modern amenities and stunning views.</p>
+                    <div class="hotel-rating">⭐️⭐️⭐️⭐️⭐️</div>
+                    <a href="hotel-details.html" class="view-details">View Details</a>
+                </div>
+            </div>
+    
+            <!-- Hotel 2 -->
+            <div class="hotel-card">
+                <img src="images/kharibulbul-hotel.jpg" alt="Cozy Hotel">
+                <div class="hotel-info">
+                    <h3>Kharibulbul Hotel</h3>
+                    <p>A cozy retreat in the heart of Shusha, perfect for those looking to unwind in a scenic, peaceful environment.</p>
+                    <div class="hotel-rating">⭐️⭐️⭐️⭐️</div>
+                    <a href="hotel-details.html" class="view-details">View Details</a>
+                </div>
+            </div>
+    
+            <!-- Hotel 3 -->
+            <div class="hotel-card">
+                <img src="images/garabag-hotel.jpg" alt="Modern Hotel">
+                <div class="hotel-info">
+                    <h3>Qarabag Hotel</h3>
+                    <p>Stay close to the action in Shusha with modern accommodations and easy access to top attractions.</p>
+                    <div class="hotel-rating">⭐️⭐️⭐️⭐️⭐️</div>
+                    <a href="hotel-details.html" class="view-details">View Details</a>
+                </div>
+            </div>
+    
+            <!-- Add more hotel cards as needed -->
+        </div>
+    </section>
+    
+
+    <!-- Room Types Section -->
+    <section class="room-types">
+        <h2>Room Types & Pricing</h2>
+        <p class="section-intro">Choose from a range of comfortable rooms to suit your needs, all equipped with modern amenities and beautiful views of Shusha.</p>
+        
+        <div class="room-grid">
+            <!-- Room 1 -->
+            <div class="room-card">
+                <img src="images/room.jpg" alt="Standard Room">
+                <div class="room-info">
+                    <h3>Standard Room</h3>
+                    <p class="room-description">A cozy, budget-friendly option with all essential amenities, perfect for solo travelers or couples.</p>
+                    <ul class="amenities-list">
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-Screen TV</li>
+                        <li>Private Bathroom</li>
+                        <li>Room Service</li>
+                    </ul>
+                    <div class="room-details">
+                        <span class="price">$80/night</span>
+                        <span class="occupancy">Max 2 Guests</span>
+                    </div>
+                    <a href="booking-page.html" class="booking-button">Book Now</a>
+                </div>
+            </div>
+    
+            <!-- Room 2 -->
+            <div class="room-card">
+                <img src="images/room.jpg" alt="Deluxe Room">
+                <div class="room-info">
+                    <h3>Deluxe Room</h3>
+                    <p class="room-description">Spacious and luxurious, this room offers added comfort with premium bedding and stunning views.</p>
+                    <ul class="amenities-list">
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-Screen TV</li>
+                        <li>Mini-Bar</li>
+                        <li>Balcony with View</li>
+                    </ul>
+                    <div class="room-details">
+                        <span class="price">$150/night</span>
+                        <span class="occupancy">Max 3 Guests</span>
+                    </div>
+                    <a href="booking-page.html" class="booking-button">Book Now</a>
+                </div>
+            </div>
+    
+            <!-- Room 3 -->
+            <div class="room-card">
+                <img src="images/room.jpg" alt="Suite">
+                <div class="room-info">
+                    <h3>Suite</h3>
+                    <p class="room-description">Indulge in luxury with a spacious suite featuring a separate lounge area, perfect for families or extended stays.</p>
+                    <ul class="amenities-list">
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-Screen TV</li>
+                        <li>Mini-Bar</li>
+                        <li>Separate Lounge Area</li>
+                    </ul>
+                    <div class="room-details">
+                        <span class="price">$250/night</span>
+                        <span class="occupancy">Max 4 Guests</span>
+                    </div>
+                    <a href="booking-page.html" class="booking-button">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Room 4 -->
+            <div class="room-card">
+                <img src="images/room.jpg" alt="Standard Room">
+                <div class="room-info">
+                    <h3>Standard Room</h3>
+                    <p class="room-description">A cozy, budget-friendly option with all essential amenities, perfect for solo travelers or couples.</p>
+                    <ul class="amenities-list">
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-Screen TV</li>
+                        <li>Private Bathroom</li>
+                        <li>Room Service</li>
+                    </ul>
+                    <div class="room-details">
+                        <span class="price">$80/night</span>
+                        <span class="occupancy">Max 2 Guests</span>
+                    </div>
+                    <a href="booking-page.html" class="booking-button">Book Now</a>
+                </div>
+            </div>
+    
+            <!-- Room 5 -->
+            <div class="room-card">
+                <img src="images/room.jpg" alt="Deluxe Room">
+                <div class="room-info">
+                    <h3>Deluxe Room</h3>
+                    <p class="room-description">Spacious and luxurious, this room offers added comfort with premium bedding and stunning views.</p>
+                    <ul class="amenities-list">
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-Screen TV</li>
+                        <li>Mini-Bar</li>
+                        <li>Balcony with View</li>
+                    </ul>
+                    <div class="room-details">
+                        <span class="price">$150/night</span>
+                        <span class="occupancy">Max 3 Guests</span>
+                    </div>
+                    <a href="booking-page.html" class="booking-button">Book Now</a>
+                </div>
+            </div>
+    
+            <!-- Room 6 -->
+            <div class="room-card">
+                <img src="images/room.jpg" alt="Suite">
+                <div class="room-info">
+                    <h3>Suite</h3>
+                    <p class="room-description">Indulge in luxury with a spacious suite featuring a separate lounge area, perfect for families or extended stays.</p>
+                    <ul class="amenities-list">
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-Screen TV</li>
+                        <li>Mini-Bar</li>
+                        <li>Separate Lounge Area</li>
+                    </ul>
+                    <div class="room-details">
+                        <span class="price">$250/night</span>
+                        <span class="occupancy">Max 4 Guests</span>
+                    </div>
+                    <a href="booking-page.html" class="booking-button">Book Now</a>
+                </div>
+            </div>    
+        </div>
+
+        <!-- See More Button -->
+        <div class="see-more-container">
+            <a href="all-rooms.html" class="see-more-button">See More Rooms</a>
+        </div>
+    </section>
+    
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <!-- FAQ Items with Accordion Effect -->
+        <div class="faq-item">
+            <button class="faq-question">What is the cancellation policy?</button>
+            <div class="faq-answer">
+                <p>Our cancellation policy varies based on the booking terms. Please refer to your booking confirmation for specific details or contact us directly for assistance.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Are pets allowed in the hotel?</button>
+            <div class="faq-answer">
+                <p>Yes, we offer pet-friendly rooms. Please inform us in advance to ensure availability and a comfortable stay for your pet.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do you offer airport transfers?</button>
+            <div class="faq-answer">
+                <p>Yes, airport transfer services are available upon request. Please contact us to arrange this service in advance.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What amenities are included in the rooms?</button>
+            <div class="faq-answer">
+                <p>All rooms include free Wi-Fi, flat-screen TV, air conditioning, and private bathroom facilities. Additional amenities vary by room type.</p>
+            </div>
+        </div>
+
+        <div class="faq-contact">
+            <p>Have more questions? We're here to help!</p>
+            <a href="contact.html" class="contact-us-button">Contact Us</a>
+        </div>
+    </section>
+
+
+
+    
+
+
+
+
+<!-- New Location Section with Map -->
+<section class="location-section">
+    <div class="location-wrapper">
+        <div class="map-container">
+            <!-- Replace the src with your actual Google Maps embed link -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1267.8404455625898!2d46.750464461638664!3d39.762965582169684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403e7b0a660aae3b%3A0x578e51dd0cd7a6a7!2zxZ51xZ9hIFJheW9uIMSwY3JhIEhha2ltaXl5yZl0aQ!5e0!3m2!1sen!2saz!4v1731141421286!5m2!1sen!2saz" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>               
+        </div>
+        <div class="contact-details">
+            <h3 data-translate="Visit Us">Visit Us</h3>
+            <p data-translate="We would love to welcome you to our office. Please contact us to schedule a visit or for more information about our services.">We would love to welcome you to our office. Please contact us to schedule a visit or for more information about our services.</p>
+            <ul>
+                <li><strong data-translate="Address:">Shusha Office:</strong> AZ5800, Shusha city, Khan Shushinsky street, entrance 3</li>
+                <li><strong data-translate="Address:">Baku Office:</strong> Baku city, Khojaly avenue 37, Demirchi Plaza</li>
+                <li><strong data-translate="Phone:">Phone:</strong> +994 10 250 26 26</li>
+                <li><strong data-translate="Email:">Email:</strong> <a href="mailto:office@shusha.gov.az">office@shusha.gov.az</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-column footer-about">
+            <h3 data-translate="About Us">About Us</h3>
+            <p data-translate="Shusha Şəhər Dövlət Qoruq İdarəsi is dedicated to preserving and restoring the historical, cultural, and architectural heritage of Shusha, one of Azerbaijan’s most treasured cities.">Shusha Şəhər Dövlət Qoruq İdarəsi is dedicated to preserving and restoring the historical, cultural, and architectural heritage of Shusha, one of Azerbaijan’s most treasured cities.</p>
+            <p><strong data-translate="Email:">Email:</strong> <a href="mailto:office@shusha.gov.az">office@shusha.gov.az</a></p>
+            <p><strong data-translate="Phone:">Phone:</strong> <a href="tel:+994 10 250 26 26">+994 10 250 26 26</a></p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column footer-links">
+            <h3 data-translate="Quick Links">Quick Links</h3>
+            <ul>
+                <li><a href="index.html" data-translate="Home">Home</a></li>
+                <li><a href="about.html" data-translate="About Us">About Us</a></li>
+                <li><a href="services.html" data-translate="Services">Services</a></li>
+                <li><a href="contact.html" data-translate="Contact Us">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-column footer-social">
+            <h3 data-translate="Follow Us">Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column footer-newsletter">
+            <h3 data-translate="Stay Updated">Stay Updated</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" required data-translate="Your Email">
+                <button type="submit" data-translate="Subscribe">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p data-translate="© 2024 TechTrade Solutions. All rights reserved.">© 2024 TechTrade Solutions. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+<!-- Carousel Script -->
+<script>
+    const carousel = document.getElementById("carousel");
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    const itemWidth = carouselItems[0].offsetWidth + 24; // Width of one item + gap
+    let isPaused = false;
+    let carouselPosition = 0;
+
+    function stopAndSlide(direction) {
+        isPaused = true; // Pauses continuous scrolling
+        carousel.classList.add("paused");
+
+        carouselPosition += direction * itemWidth;
+
+        // Check if we’ve reached the end or beginning
+        if (carouselPosition >= itemWidth * carouselItems.length) {
+            carouselPosition = 0; // Instantly reset to the start
+            carousel.scrollTo({ left: 0, behavior: "instant" }); // Instantly jump to the beginning
+        } else if (carouselPosition < 0) {
+            carouselPosition = itemWidth * (carouselItems.length - 1); // Instantly loop to the last item
+            carousel.scrollTo({ left: carouselPosition, behavior: "instant" });
+        } else {
+            carousel.scrollTo({
+                left: carouselPosition,
+                behavior: "smooth" // Smooth transition for normal scroll
+            });
+        }
+    }
+
+    // Continuous scrolling function
+    function autoScroll() {
+        if (!isPaused) {
+            carouselPosition += itemWidth;
+            if (carouselPosition >= itemWidth * carouselItems.length) {
+                carouselPosition = 0;
+                carousel.scrollTo({ left: 0, behavior: "instant" }); // Reset instantly
+            } else {
+                carousel.scrollTo({
+                    left: carouselPosition,
+                    behavior: "smooth"
+                });
+            }
+        }
+    }
+
+    // Restart scrolling when clicking outside the carousel
+    document.addEventListener("click", (e) => {
+        if (!carousel.contains(e.target) && isPaused) {
+            isPaused = false;
+            carousel.classList.remove("paused");
+        }
+    });
+
+    // Set up continuous scrolling every 3 seconds
+    setInterval(autoScroll, 3000); // Adjust interval as needed
+</script>
+
+
+<!-- FAQ Script -->
+<script>
+    // FAQ Accordion Functionality
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle('open');
+            button.classList.toggle('active');
+        });
+    });
+</script>
+
+
+<!-- Page Change Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current page URL path, excluding the leading '/'
+    const currentPath = window.location.pathname.replace(/^\//, '');
+
+    // Select all navigation links
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    navLinks.forEach(link => {
+        // Get the href attribute of each link, excluding the leading '/'
+        const linkPath = link.getAttribute("href").replace(/^\//, '');
+
+        // Compare the link path to the current path
+        if (linkPath === currentPath) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+    
+</body>
+</html>

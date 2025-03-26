@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shushacard - Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Shusha City Card Logo">
+            </a>        
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="card.html" class="nav-link">Get Shusha Card</a></li>
+                <li><a href="passes.html" class="nav-link">City Passes</a></li>
+                <li><a href="booking.html" class="nav-link">Hotel Booking</a></li>
+                <li><a href="app.html" class="nav-link">Mobile App</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="login-buttons">
+            <a href="#" class="login-button resident-login"><i class="fas fa-user"></i> Resident Login</a>
+            <a href="#" class="login-button tourist-login"><i class="fas fa-globe"></i> Tourist Login</a>
+        </div>
+    </header>          
+    
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>We’re Here to Help</h1>
+            <p>Get in touch with us for any inquiries, support, or information about the Shusha City Card. We're dedicated to making your experience seamless and enjoyable.</p>
+        </div>
+    </section>
+    
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <h2>Contact Us</h2>
+        <p class="form-intro">We’re here to answer your questions and provide assistance. Please fill out the form below, and our team will get back to you as soon as possible.</p>
+        
+        <form class="contact-form" id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+    
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Subject">
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+    
+            <button type="submit" class="submit-button">Send Message</button>
+    
+            <!-- Confirmation message -->
+            <p class="confirmation-message" id="confirmationMessage" style="display: none;">
+                Thank you for reaching out! We will get back to you shortly.
+            </p>
+        </form>
+    </section>
+    
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <h2>Contact Information</h2>
+        <p class="intro-text">We’re here to help! Reach out to us through any of the options below.</p>
+        
+        <div class="contact-info-grid">
+            <!-- Phone Number -->
+            <div class="contact-info-item">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Phone Number</h3>
+                <p>+994 10 250 26 26</p>
+            </div>
+    
+            <!-- Email Address -->
+            <div class="contact-info-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Address</h3>
+                <p><a href="mailto:office@shusha.gov.az">office@shusha.gov.az</a></p>
+            </div>
+    
+            <!-- Shusha Office-->
+            <div class="contact-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Shusha Office</h3>
+                <p>AZ5800, Shusha City, Khan Shushinsky Street, Entrance 3</p>
+            </div>
+            <!-- Baku Office -->
+            <div class="contact-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Baku Office</h3>
+                <p>Baku city, Khojaly avenue 37, Demirchi Plaza</p>
+            </div>
+        </div>
+    </section>
+   
+    
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <!-- FAQ Items with Accordion Effect -->
+        <div class="faq-item">
+            <button class="faq-question">What is the Shusha City Card?</button>
+            <div class="faq-answer">
+                <p>The Shusha City Card is a multifunctional pass that provides access to cultural sites, discounts at partner locations, and convenient payment options throughout the city.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How do I get the Shusha City Card?</button>
+            <div class="faq-answer">
+                <p>You can get the Shusha City Card online through our website or in person at designated locations in Shusha. Visit our "How to Get the Card" page for more details.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What benefits does the Shusha City Card offer?</button>
+            <div class="faq-answer">
+                <p>Cardholders enjoy exclusive discounts at local attractions, restaurants, shops, and access to special offers at various city locations.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Is the Shusha City Card available for tourists and residents?</button>
+            <div class="faq-answer">
+                <p>Yes, the card is available for both tourists and residents. Each card type offers tailored benefits to enhance your Shusha experience.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I renew or top up my card?</button>
+            <div class="faq-answer">
+                <p>You can easily renew or top up your card through our mobile app or at designated kiosks throughout the city.</p>
+            </div>
+        </div>
+
+        <div class="faq-contact">
+            <p>Have more questions? We're here to help!</p>
+            <a href="contact.html" class="contact-us-button">Contact Us</a>
+        </div>
+    </section>
+
+
+    <!-- Social Media Section -->
+    <section class="social-media-section">
+        <h2>Connect with Us</h2>
+        <p class="intro-text">Follow us on social media to stay updated with the latest news, events, and special offers.</p>
+        
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-icon youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+<!-- New Location Section with Map -->
+<section class="location-section">
+    <div class="location-wrapper">
+        <div class="map-container">
+            <!-- Replace the src with your actual Google Maps embed link -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1267.8404455625898!2d46.750464461638664!3d39.762965582169684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403e7b0a660aae3b%3A0x578e51dd0cd7a6a7!2zxZ51xZ9hIFJheW9uIMSwY3JhIEhha2ltaXl5yZl0aQ!5e0!3m2!1sen!2saz!4v1731141421286!5m2!1sen!2saz" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>               
+        </div>
+        <div class="contact-details">
+            <h3 data-translate="Visit Us">Visit Us</h3>
+            <p data-translate="We would love to welcome you to our office. Please contact us to schedule a visit or for more information about our services.">We would love to welcome you to our office. Please contact us to schedule a visit or for more information about our services.</p>
+            <ul>
+                <li><strong data-translate="Address:">Shusha Office:</strong> AZ5800, Shusha city, Khan Shushinsky street, entrance 3</li>
+                <li><strong data-translate="Address:">Baku Office:</strong> Baku city, Khojaly avenue 37, Demirchi Plaza</li>
+                <li><strong data-translate="Phone:">Phone:</strong> +994 10 250 26 26</li>
+                <li><strong data-translate="Email:">Email:</strong> <a href="mailto:office@shusha.gov.az">office@shusha.gov.az</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-column footer-about">
+            <h3 data-translate="About Us">About Us</h3>
+            <p data-translate="Shusha Şəhər Dövlət Qoruq İdarəsi is dedicated to preserving and restoring the historical, cultural, and architectural heritage of Shusha, one of Azerbaijan’s most treasured cities.">Shusha Şəhər Dövlət Qoruq İdarəsi is dedicated to preserving and restoring the historical, cultural, and architectural heritage of Shusha, one of Azerbaijan’s most treasured cities.</p>
+            <p><strong data-translate="Email:">Email:</strong> <a href="mailto:office@shusha.gov.az">office@shusha.gov.az</a></p>
+            <p><strong data-translate="Phone:">Phone:</strong> <a href="tel:+994 10 250 26 26">+994 10 250 26 26</a></p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column footer-links">
+            <h3 data-translate="Quick Links">Quick Links</h3>
+            <ul>
+                <li><a href="index.html" data-translate="Home">Home</a></li>
+                <li><a href="about.html" data-translate="About Us">About Us</a></li>
+                <li><a href="services.html" data-translate="Services">Services</a></li>
+                <li><a href="contact.html" data-translate="Contact Us">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-column footer-social">
+            <h3 data-translate="Follow Us">Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column footer-newsletter">
+            <h3 data-translate="Stay Updated">Stay Updated</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" required data-translate="Your Email">
+                <button type="submit" data-translate="Subscribe">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p data-translate="© 2024 TechTrade Solutions. All rights reserved.">© 2024 TechTrade Solutions. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+<!-- FAQ Script -->
+<script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle('open');
+            button.classList.toggle('active');
+        });
+    });
+</script>
+
+
+<!-- Contact Form Script -->
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get the form data
+        var formData = new FormData(this);
+
+        // Send the form data using Fetch API
+        fetch('your-server-endpoint', {
+            method: 'POST',
+            body: formData
+        })
+        .then(function(response) {
+            if (response.ok) {
+                // Display success message
+                document.getElementById('form-messages').classList.remove('error');
+                document.getElementById('form-messages').classList.add('success');
+                document.getElementById('form-messages').textContent = 'Thank you! Your message has been sent.';
+                document.getElementById('form-messages').style.display = 'block';
+                // Reset the form
+                document.getElementById('contact-form').reset();
+            } else {
+                // Display error message
+                document.getElementById('form-messages').classList.remove('success');
+                document.getElementById('form-messages').classList.add('error');
+                document.getElementById('form-messages').textContent = 'Oops! Something went wrong. Please try again.';
+                document.getElementById('form-messages').style.display = 'block';
+            }
+        })
+        .catch(function(error) {
+            // Display error message
+            document.getElementById('form-messages').classList.remove('success');
+            document.getElementById('form-messages').classList.add('error');
+            document.getElementById('form-messages').textContent = 'Oops! There was a problem submitting your form.';
+            document.getElementById('form-messages').style.display = 'block';
+        });
+    });
+</script>
+
+
+</body>
+</html>
